@@ -17,9 +17,10 @@ export default function AuthStack() {
       <Stack.Screen name="Intro" component={Sliders} />
       <Stack.Screen name="Signin" component={SigninScreen} />
       <Stack.Screen name="Login" component={LoginScreen} />
-      <Stack.Screen name="Forgot-passoword" component={Sucess} />
+      <Stack.Screen name="Forgot-passoword" component={ForgotPasswordScreen} />
       <Stack.Screen name="OTP-verification" component={OTPverification} />
       <Stack.Screen name="New-passoword" component={NewPassScreen} />
+      <Stack.Screen name="Sucess" component={Sucess} />
     </Stack.Navigator>
   );
 }

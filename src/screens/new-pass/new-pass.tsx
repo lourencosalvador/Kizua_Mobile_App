@@ -11,9 +11,7 @@ export function NewPassScreen(){
   const {  authData, signin} = useAuth();
 
   const changePassword = useCallback(()=> {
-    if(password === newpassword){
-      signin("", password)
-    }
+    navigation.navigate("Sucess")
   }, [])
   return(
     <View className="flex-1  items-center bg-[#FFFF]">

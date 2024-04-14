@@ -1,5 +1,5 @@
 import { MotiView } from "moti"
-import { View, StyleSheet } from "react-native"
+import { View, StyleSheet, Image} from "react-native"
 import { Easing } from "react-native-reanimated"
 
 
@@ -14,7 +14,7 @@ export function Wave(){
         return(
           <MotiView 
           from={{
-            opacity: 1,
+            opacity: 0.7,
             scale: 1,
           }}
           animate={{
@@ -34,7 +34,10 @@ export function Wave(){
           />
         )
        })}
-        <View className='w-[100px] h-[100px] bg-[#8C61E9] rounded-full'>
+        <View className='w-[100px] h-[100px] rounded-full overflow-hidden'>
+          <Image
+          className="w-[100px] h-[100px] object-cover"
+           source={require("../../../assets/photo-perfil.jpg")}/>
         </View>
       </View>
     </>

@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler'
 import Routes from './routes';
 import { AuthProvide } from './contexts/Auth';
 
